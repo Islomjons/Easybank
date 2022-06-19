@@ -1,0 +1,132 @@
+.hero {
+    background: #F2F2F2;
+    background-image: url("./../images/bank.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 605px) -260px;
+    position: relative;
+    
+    &__inner-wrapper {
+        padding: {
+            top: 170px;
+            bottom: 170px
+        };
+    }
+    
+    &__container {
+        max-width: 1110px;
+        width: 100%;
+    }
+    
+    &__left {
+        max-width: 447px;
+        width: 100%;
+    }
+    
+    &__heading {
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 100;
+        font-size: 56px;
+        line-height: 64px;
+        letter-spacing: -1px;
+        color: #2D314D;
+        margin-bottom: 24px;
+    }
+    
+    &__text {
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: -0.28125px;
+        color: #9597A5;
+        margin-bottom: 36px;
+    }
+    
+    &__iphone {
+        position: absolute;
+        top: -122px;
+        left: 50%;
+        
+        transform: translateX(90px);
+    }
+    
+    &__link {
+    }
+}
+
+.button {
+    border: none;
+    outline: none;
+    background: none;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    color: #FFFFFF;
+    padding: 8px 20px;
+    background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+    border-radius: 22px;
+    cursor: pointer;
+    min-width: 165px;
+    max-width: 250px;
+    text-align: center;
+    transition: 0.3s ease;
+    
+    &:hover {
+        opacity: 0.6;
+    }
+    
+    &:active {
+        opacity: 0.4;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .hero {
+        padding-top: 27px;
+        background: #F2F2F2;
+        background-image: url("./../images/phones-mobile.png");
+        background-repeat: no-repeat;
+        background-position: calc(50% + 605px);
+        
+        &__inner-wrapper {
+            margin-top: 50px;
+            padding: {
+                top: 170px;
+                bottom: 88px
+            };
+        }
+        
+        &__container {
+        }
+        
+        &__left {
+            max-width: 327px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            margin-top: 332px;
+        }
+        
+        &__heading {
+            font-size: 40px;
+            line-height: 47px;
+            margin-bottom: 16px;
+        }
+        
+        &__text {
+            font-size: 15px;
+            line-height: 25px;
+            letter-spacing: -0.28125px;
+            color: #9597A5;
+            margin-bottom: 32px;
+        }
+        
+        &__link {
+        }
+    }
+}
+
+

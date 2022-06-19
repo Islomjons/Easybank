@@ -1,0 +1,155 @@
+.easybank {
+    padding: {
+        top: 97px;
+        bottom: 97px;
+    };
+    background-color: #F4F5F7;
+    
+    &__container {
+    }
+    
+    &__wrapper {
+        max-width: 635px;
+        width: 100%;
+        padding-bottom: 72px;
+    }
+    
+    &__heading {
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 100;
+        font-size: 40px;
+        line-height: 64px;
+        letter-spacing: -0.714286px;
+        color: #2D314D;
+        margin-bottom: 16px;
+    }
+    
+    &__text {
+        font-size: 18px;
+        line-height: 28px; 
+        letter-spacing: -0.28125px; 
+        color: #9597A5;
+    }
+    
+    &__list {
+        display: flex;
+        gap: 30px;
+    }
+    
+    &__item {
+        max-width: 255px;
+        width: 100%;
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 72px;
+            height: 72px;
+            background-image: url("./../images/card.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-bottom: 40px;
+        }
+        
+        &:nth-child(2)::before {
+            background-image: url("./../images/phone.svg");
+        }
+        
+        &:nth-child(3)::before {
+            background-image: url("./../images/guys.svg");
+        }
+        
+        &:nth-child(4)::before {
+            background-image: url("./../images/sun.svg");
+        }
+    }
+    
+    &__item-heading {
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 100;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -0.428571px;
+        color: #2D314D;
+        margin-bottom: 26px;
+    }
+    
+    &__item-text {
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: -0.25px;
+        color: #9597A5;
+    }
+    
+} 
+
+@media only screen and (max-width: 900px) {
+    .easybank {
+        padding: {
+            top: 64px;
+            bottom: 97px;
+        };
+        background-color: #F4F5F7;
+        
+        &__container {
+            max-width: 375px;
+            width: 100%;
+        }
+        
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            max-width: 327px;
+            width: 100%;
+            padding-bottom: 56px;
+        }
+        
+        &__heading {
+            font-size: 32px;
+            line-height: 38px;
+            margin-bottom: 16px;
+        }
+        
+        &__text {
+            font-size: 15px;
+            line-height: 25px;
+        }
+        
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            text-align: center;
+            margin: 0 auto;
+            gap: 30px;
+        }
+        
+        &__item {
+            max-width: 327px;
+            width: 100%;
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 72px;
+                height: 72px;
+                background-image: url("./../images/card.svg");
+                background-repeat: no-repeat;
+                background-position: center;
+                margin-bottom: 24px;
+            }
+        }
+        
+        &__item-heading {
+            font-size: 20px;
+            line-height: 28px;
+            margin-bottom: 16px;
+        }
+        
+        &__item-text {
+            font-size: 15px;
+            line-height: 25px;
+        }
+    } 
+}

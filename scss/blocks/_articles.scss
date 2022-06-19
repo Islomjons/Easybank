@@ -1,0 +1,85 @@
+.articles {
+    background-color: #F2F2F2;
+    padding: {
+        top: 80px;
+        bottom: 80px;
+    };
+    
+    
+    &__container {
+    }
+    
+    &__heading {
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 100;
+        font-size: 40px;
+        line-height: 64px;
+        letter-spacing: -0.714286px;
+        color: #2D314D;
+        margin-bottom: 40px;
+    }
+    
+    &__list {
+        display: flex;
+        gap: 30px;
+    }
+    
+    &__item {
+        max-width: 255px;
+        width: 100%;
+        background: #FFFFFF;
+        border-radius: 5px;
+        transition: 0.3s ease;
+
+        &:hover {
+            transform: scale(1.03);
+        }
+    }
+    
+    &__img {
+        width: 255px;
+        height: 200px;
+        object-fit: contain;
+    }
+    
+    &__inner-wrapper {
+        padding: 24px;
+    }
+    
+    &__name {
+        display: block;
+        font-size: 10px;
+        line-height: 18px;
+        letter-spacing: -0.15625px;
+        color: #9597A5;
+        margin-bottom: 8px;
+    }
+    
+    &__link {
+        max-width: 207px;
+        width: 100%;  
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: -0.285714px;
+        color: #2D314D;
+        text-decoration: none;
+        transition: 0.3s ease;
+
+        &:hover {
+            color: #30C88F;
+        }
+    }
+    
+    &__text {
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: -0.203125px;
+        color: #9597A5;
+        margin-top: 8px;
+    }
+    
+}
